@@ -150,7 +150,7 @@
     getKillMails(location.solar_system_id);
   }
 
-  init();
+  // init();
 </script>
 
 <main>
