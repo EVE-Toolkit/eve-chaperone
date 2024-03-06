@@ -146,11 +146,15 @@
   }
 
   async function init() {
+    const auth = await getAuth();
+
+    if (!auth) return;
+
     const location = await getLocation();
     getKillMails(location.solar_system_id);
   }
 
-  // init();
+  init();
 </script>
 
 <main>
